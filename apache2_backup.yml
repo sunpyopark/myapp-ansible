@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  become_method: sudo
+  gather_facts: yes
+  tasks:
+    - command: touch /home/ubuntu/ansible.txt
+      register: tmp_files
