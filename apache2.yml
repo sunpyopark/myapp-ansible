@@ -6,6 +6,8 @@
   tasks:
     - name: install apache2
       apt: name=apache2 update_cache=yes state=latest
+    - name: Install php
+      apt: name=php update_cache=yes state=latest
       
   tasks:
     - name: install vsftpd
