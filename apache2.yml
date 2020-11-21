@@ -4,5 +4,5 @@
   become_method: sudo
   gather_facts: yes
   tasks:
-    - command: touch /home/ubuntu/ansible.txt
-      register: tmp_files
+    - name: install apache2
+      apt: name=apache2 update_cache=yes state=latest
