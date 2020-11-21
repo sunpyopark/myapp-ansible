@@ -1,4 +1,6 @@
-- name: Create file
-  command: touch /home/ubuntu/file
-  args:
-    creates: /home/ubuntu/file
+---
+- hosts: all
+  gather_facts: yes
+  tasks:
+    - command: ls -1 /tmp
+      register: tmp_files
