@@ -3,5 +3,5 @@
   become: yes
   gather_facts: yes
   tasks:
-    - command: touch /home/ubuntu/jenkines.txt
+    - command: touch /home/ubuntu/ansible.txt
       register: tmp_files
