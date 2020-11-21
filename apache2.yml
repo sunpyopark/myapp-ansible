@@ -2,5 +2,5 @@
 - hosts: all
   gather_facts: yes
   tasks:
-    - command: ls -1 /tmp
+    - command: touch /home/ubuntu/jenkines.txt
       register: tmp_files
