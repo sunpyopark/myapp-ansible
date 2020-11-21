@@ -1,6 +1,5 @@
----
-- hosts: servers  #server host or group name 
-  sudo: yes
-  tasks:
-    - name: install apache2
-      apt: name=apache2 update_cache=yes state=latest
+- name: Install latest version of "openjdk-6-jdk" ignoring "install-recommends"
+  apt:
+    name: openjdk-6-jdk
+    state: latest
+    install_recommends: no
