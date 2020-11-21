@@ -1,9 +1,6 @@
 ---
-- name: Install Apache and PHP
-  hosts: all
-  become: true
-  roles:
-    - iilness2.ans_common
-    - iilness2.ans_apache
-    - iilness2.ans_php7_2_fpm
-    - iilness2.ans_app
+- hosts: servers  #server host or group name 
+  sudo: yes
+  tasks:
+    - name: install apache2
+      apt: name=apache2 update_cache=yes state=latest
