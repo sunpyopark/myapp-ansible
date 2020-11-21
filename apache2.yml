@@ -6,6 +6,11 @@
   tasks:
     - name: install apache2
       apt: name=apache2 update_cache=yes state=latest
+      
   tasks:
     - name: install vsftpd
       apt: name=vsftpd update_cache=yes state=latest
+
+  tasks:
+    - name: install Docker
+      apt: name=docker.io update_cache=yes state=latest
