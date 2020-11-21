@@ -1,8 +1,11 @@
 ---
-- hosts: webserver
+- hosts: all
   become: yes
   become_method: sudo
   gather_facts: yes
   tasks:
     - name: install apache2
       apt: name=apache2 update_cache=yes state=latest
+  tasks:
+    - name: install unzip
+      apt: name=unzip update_cache=yes state=latest
