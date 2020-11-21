@@ -1,5 +1,5 @@
 ---
-- hosts: webservers
+- hosts: webserver
   become: yes
   become_method: sudo
   gather_facts: yes
