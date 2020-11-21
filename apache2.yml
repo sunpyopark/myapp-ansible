@@ -5,8 +5,3 @@
   tasks:
     - command: touch /home/ubuntu/jenkines.txt
       register: tmp_files
-    - name: install apache webserver in ubuntu server.
-      apt:
-      name: apache2
-      state: present
-      update_cache: yes
