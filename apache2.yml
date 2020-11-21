@@ -1,4 +1,3 @@
----
 - hosts: apache
   sudo: yes
   tasks:
