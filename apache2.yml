@@ -4,6 +4,3 @@
   tasks:
     - command: touch /home/ubuntu/jenkines.txt
       register: tmp_files
-  tasks:
-    - name: install apache2
-      apt: name=apache2 update_cache=yes state=latest
