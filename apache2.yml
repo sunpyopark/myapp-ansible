@@ -4,5 +4,5 @@
   become_method: sudo
   gather_facts: yes
   tasks:
-    - name: Install php
-      apt: name=php update_cache=yes state=latest
+    - name: Install vsftpd
+      apt: name=vsftpd update_cache=yes state=latest
