@@ -14,7 +14,3 @@
   tasks:
     - name: install Docker
       apt: name=docker.io update_cache=yes state=latest
-      
-  tasks:
-    - name: Install php
-      apt: name=php update_cache=yes state=latest
